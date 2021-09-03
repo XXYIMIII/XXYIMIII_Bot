@@ -4,16 +4,19 @@ const keepAlive = require('./server.js');
 
 const client = new Discord.Client()
 client.on("ready", function(){
-        console.log(`Pasrah online`);
+        console.log(`isi sesuka hati`);
 });
-client.login('ODM3MzgxNDQxMjg0ODY2MTQ5.YIruPQ.1HdYUEUsWQ9KS5t7K6Tt6V3mk7s');
+client.login('Token Bot Discord');
 
 
 
 client.on ("message", (message) => {
 
 if (message.author.bot) return;
-   
+
+// Untuk angkat "41" tergantung berapa banyak foto yg kalian gunakan.
+// Untuk format foto bisa png Dan jpg
+  
 if (message.content.startsWith ("pap dong")) {
     number = 41;
     imageNumber = Math.floor (Math.random() * (number - 1 + 1 )) + 1;
